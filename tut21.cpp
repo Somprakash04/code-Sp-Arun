@@ -30,6 +30,6 @@ int main(){
     harry.e=34;
     harry.setdata(1,2,3);
     harry.getdata();
-    return 0
+    return 0;
 
 }

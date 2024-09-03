@@ -13,6 +13,6 @@ cout<<"Enter the value of a is:"<<endl;
   cin>>b;
   c=a+b;
   cout<<"the sum is:"<<c<<endl; 
-  return 0
+  return 0;
 } 
  

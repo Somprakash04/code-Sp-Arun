@@ -35,5 +35,5 @@ int main(){     //Array example
     cout<<*(p++);
     to be continue;;;;;
      
-    return 0
+    return 0;
 }

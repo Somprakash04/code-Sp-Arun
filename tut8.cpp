@@ -25,6 +25,6 @@ int main(){
       int c=(a*5)+b;
       cout<<c<<endl;
 
-      return 0
+      return 0;
 
 }

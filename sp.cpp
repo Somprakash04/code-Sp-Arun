@@ -12,5 +12,5 @@ int main()
     cout<<"Enter Three Numbers"<<endl;
     cin>>a>>b>>c;
     cout<<"Average is "<<avg(a,b,c)<<endl;
-    return 0
+    return 0;
 }

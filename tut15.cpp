@@ -20,7 +20,7 @@ int sum(int a, int b){
     //formal parameter a and b will be taking 
 //    values from actual
     int c=a+b;
-    return c
+    return c;
 }
 void g(){
     cout<<"\nHello, Good morning";

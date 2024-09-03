@@ -18,5 +18,5 @@ int main(){
     cout<<**c<<endl;
     cout<<&c<<endl;
 
-    return 0
+    return 0;
 }

@@ -25,5 +25,5 @@ int main(){
     cin>>a;
   //  cout<<"factorial of "<<a<<" is "<<factorial(a)<<endl;
     cout<<"The term in fibanacci sequence at position "<<a<<" is "<<fib(a)<<endl;
-    return 0
+    return 0;
 }

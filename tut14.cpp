@@ -40,5 +40,5 @@ using namespace std;
     cout<<"The value is "<<harry.eId<<endl;
     cout<<"The value is "<<harry.favchar<<endl;
     cout<<"The value is "<<harry.salary<<endl;*/
-    return 0
+    return 0;
 }

@@ -16,5 +16,5 @@ int main(){
     cout <<"enter a number"<<endl;
     cin>>a;
     cout<<"factorial of "<<a<<" is "<<factorial(a)<<endl;
-    return 0
+    return 0;
 }
