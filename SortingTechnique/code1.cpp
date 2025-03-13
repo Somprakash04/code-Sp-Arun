@@ -32,7 +32,7 @@ using namespace std;
 //           }
 // };
 // Optimal Approach
-class solution {
+class solution {// DUTCH NATIONAL FLAG ALGORITHM
     public:  ////LEETCODE 75;
           void Colors(vector<int>&Colors){
           int low=0,mid=0,n=Colors.size(), high=n-1;

@@ -47,6 +47,18 @@ class List{
             head=head->next;
             delete temp;
         }
+        void pop_back(){
+            if(head==NULL){
+                cout<<"List is empty!"<<endl;
+                return;
+            }
+            Node* temp=head;
+            while(temp->next!=tail){
+                temp=temp->next;
+            }
+            temp->next=NULL;
+            delete temp;
+        }
         void printList(){
         Node* temp=head;
         if(head == NULL){
@@ -68,6 +80,7 @@ int main(){
     ll.push_front(3);
     ll.push_front(4);
     ll.pop_front();
+    ll.pop_back();
     ll.printList();
     return 0;
 }
