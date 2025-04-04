@@ -59,6 +59,27 @@ class List{
             temp->next=NULL;
             delete temp;
         }
+        void insert_pos(int val,int pos){
+                  if(pos<0){
+                    cout<<"Invalid position\n";
+                    return;
+                  }
+                  if(pos==0){
+                    push_front(val);
+                    return;
+                  }
+                  Node* temp=head;
+                  for(int i=0;i<pos-1;i++){
+                    if(temp==NULL){
+                      cout<<"Invalid position\n";
+                      return;
+                    }
+                    temp=temp->next;
+                  }
+                  Node* newNode=new Node(val);
+                  newNode->next=temp->next;
+                  temp->next=newNode;
+                }
         void printList(){
         Node* temp=head;
         if(head == NULL){
@@ -81,6 +102,7 @@ int main(){
     ll.push_front(4);
     ll.pop_front();
     ll.pop_back();
+    ll.insert_pos(5,2);
     ll.printList();
     return 0;
 }
