@@ -3,30 +3,36 @@
 using namespace std;
 class Solution{
     public:
-          int maxVowels(string s, int k){
-            string wovel = {'a','e','i','o','u'};
-            int count =0;
-            for(int i=0; i<k ; i++){
-                for(int j=0; j<wovel.size(); j++){
-                    if(s[i] == wovel[j]){
-                        count++;
-                    }
+    bool isVowel(char ch){
+        //return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+      string vowel= "aeiou";
+      for(int i=0;i<5; i++){
+        if(vowel[i]==ch){
+            return true;
+        }
+      }  
+      return false;
+    }
+    int maxVowels(string s, int k){
+          int maxcount=0;
+          for(int i=0; i<= s.length()-k; i++){
+            int count=0;
+            for(int j=i;j<i+k; j++){
+                if(isVowel(s[j])){
+                    count++;
                 }
-                if(count == k) return count;
             }
-            for(int i=k; i<s.size(); i++){
-                for(int j=0; j<wovel.size(); j++){
-                    if(s[i] == wovel[j]){
-                        count++;
-                    }
-                }
+            if(count>maxcount){
+                maxcount = count;
             }
-            return count;
+            if(maxcount == k) return k;
           }
+          return maxcount;
+    }
 };
 int main(){
-       string s ="abciiidef";
-       int k=3;
+       string s ="abciidef";
+       int k=2;
        Solution sol;
        cout<<sol.maxVowels(s, k);
 }
