@@ -32,7 +32,7 @@ int AggressiveCows(vector<int>&nums,int n,int c){
     }
     return ans;
 }
-
+//////////////
 int main(){
     vector<int>nums={1,2,4,8,9};
     int n=5,c=3;
